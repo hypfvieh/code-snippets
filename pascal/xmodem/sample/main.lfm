@@ -1,0 +1,103 @@
+object frm_main: Tfrm_main
+  Left = 712
+  Height = 352
+  Top = 215
+  Width = 593
+  BorderStyle = bsDialog
+  Caption = 'XModem Sample'
+  ClientHeight = 352
+  ClientWidth = 593
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '1.2.0.3'
+  object btn_connect: TButton
+    Left = 248
+    Height = 25
+    Top = 0
+    Width = 75
+    Caption = 'Connect'
+    OnClick = btn_connectClick
+    TabOrder = 0
+  end
+  object cmb_serialport: TComboBox
+    Left = 72
+    Height = 26
+    Top = 3
+    Width = 168
+    ItemHeight = 0
+    TabOrder = 1
+    Text = 'cmb_serialport'
+  end
+  object txt_filename: TEdit
+    Left = 72
+    Height = 26
+    Top = 30
+    Width = 168
+    TabOrder = 2
+  end
+  object btn_upload: TButton
+    Left = 248
+    Height = 25
+    Top = 30
+    Width = 75
+    Caption = 'Upload'
+    OnClick = btn_uploadClick
+    TabOrder = 3
+  end
+  object memo_log: TMemo
+    Left = 4
+    Height = 246
+    Top = 104
+    Width = 582
+    Lines.Strings = (
+      ''
+    )
+    ScrollBars = ssBoth
+    TabOrder = 4
+  end
+  object lbl_serialport: TLabel
+    Left = 4
+    Height = 16
+    Top = 13
+    Width = 63
+    Caption = 'Serial-Port:'
+    ParentColor = False
+  end
+  object lbl_file: TLabel
+    Left = 4
+    Height = 16
+    Top = 40
+    Width = 22
+    Caption = 'File:'
+    ParentColor = False
+  end
+  object lbl_log: TLabel
+    Left = 4
+    Height = 16
+    Top = 82
+    Width = 24
+    Caption = 'Log:'
+    ParentColor = False
+  end
+  object btn_exit: TButton
+    Left = 511
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'Exit'
+    OnClick = btn_exitClick
+    TabOrder = 5
+  end
+  object pb_upload: TProgressBar
+    Left = 72
+    Height = 20
+    Top = 56
+    Width = 168
+    TabOrder = 6
+  end
+  object dlg_openfile: TOpenDialog
+    left = 39
+    top = 130
+  end
+end
